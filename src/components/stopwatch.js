@@ -11,7 +11,11 @@ class Stopwatch extends Component {
       startTime: null,
       laps: []
     };
+
+    this.handleStartPress = this.handleStartPress.bind(this);
   }
+
+
 
   resetButton(){
     return <button
