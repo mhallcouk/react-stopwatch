@@ -13,6 +13,12 @@ class Stopwatch extends Component {
     };
 
     this.handleStartPress = this.handleStartPress.bind(this);
+    this.handleResetPress = this.handleResetPress.bind(this);
+    this.handleLapPress = this.handleLapPress.bind(this);
+    this.resetButton = this.resetButton.bind(this);
+    this.laps = this.laps.bind(this);
+    this.startStopButton = this.startStopButton.bind(this);
+    this.lapButton = this.lapButton.bind(this);
   }
 
 
