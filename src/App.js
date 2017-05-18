@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Stopwatch from "./components/stopwatch";
 // import logo from './logo.svg';
-// import './App.css';
+import './App.css';
 
 class App extends Component {
   render() {

@@ -36,12 +36,14 @@ class Stopwatch extends Component {
   laps(){
     return this.state.laps.map(function(time, index){
       return <div id="lap">
-        <div id="lapText">
+        <table>
+        <td id="lapShow" className="lapText">
           Lap#{index + 1}
-        </div>
-        <div id="lapText">
+        </td>
+        <td id="timeShow" className="lapText">
           {formatTime(time)}
-        </div>
+        </td>
+      </table>
       </div>
     });
   }
@@ -50,9 +52,9 @@ class Stopwatch extends Component {
     // var style = this.state.running ? styles.stopButton : styles.startButton;
 
     return <button
-      id="button"
+      className="button"
       onClick={this.handleStartPress}>
-      <div id="buttonText">
+      <div className="buttonText">
         {this.state.running ? "Stop" : "Start"}
       </div>
     </button>
@@ -60,9 +62,9 @@ class Stopwatch extends Component {
 
   lapButton() {
     return <button
-    id="button"
+    className="button"
     onClick={this.handleLapPress}>
-      <div id="buttonText">
+      <div className="buttonText">
         Lap
       </div>
     </button>
